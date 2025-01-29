@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy the JAR file into the container (update the path to your JAR file)
 COPY target/PetClinic-0.0.1-SNAPSHOT.jar /app/app.jar
 
-ENV DB_URL=jdbc:mysql://host.docker.internal:3306/pet_clinic
+ENV DB_URL=jdbc:mysql://172.31.45.200:3306/pet_clinic
 
 # Expose the port on which your Spring Boot app will run (default is 8080)
 EXPOSE 8081
